@@ -12,8 +12,6 @@ export default function App() {
     const getFromStorage = JSON.parse(localStorage.getItem('contacts'));
     if (getFromStorage) {
       setContacts(getFromStorage);
-    } else {
-      console.log('No contacts found in localStorage');
     }
   }, []);
 
