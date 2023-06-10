@@ -61,7 +61,7 @@ export default function ContactForm({ contacts, handleValueChange }) {
           <input
             type="text"
             name="name"
-            // pattern="^[a-zA-Z\s'\\-]*$"
+            pattern="^[a-zA-Zа-яА-Я]+(([' \-][a-zA-Zа-яА-Я])?[a-zA-Zа-яА-Я]*)*$"
             title="Name may contain only letters, apostrophe, dash, and spaces. For example: John, Anne-Marie, Charles O'Connell"
             required
             value={name}
