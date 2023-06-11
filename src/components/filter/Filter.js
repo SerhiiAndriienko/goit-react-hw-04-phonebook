@@ -10,7 +10,7 @@ function Filter({ filter, filterChange }) {
         type="text"
         autoComplete="off"
         name="filter"
-        pattern="^[a-zA-Zа-яА-Я\s'-]*$"
+        pattern="^[a-zA-Zа-яА-Я]+(([' \-][a-zA-Zа-яА-Я])?[a-zA-Zа-яА-Я]*)*$"
         onChange={handleFilterChange}
         value={filter}
       />

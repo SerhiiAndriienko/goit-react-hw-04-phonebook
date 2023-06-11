@@ -15,8 +15,8 @@ export default function App() {
     }
   }, []);
 
-  const filterChange = e => {
-    setFilter(e.target.value);
+  const filterChange = filterValue => {
+    setFilter(filterValue);
   };
 
   const handleValueChange = array => {
