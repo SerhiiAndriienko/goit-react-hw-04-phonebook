@@ -1,4 +1,5 @@
 import { useEffect } from 'react';
+import PropTypes from 'prop-types';
 
 function ContactList({ filter, contacts, onDeleteContact }) {
   useEffect(() => {
@@ -57,5 +58,9 @@ function ContactList({ filter, contacts, onDeleteContact }) {
     </ul>
   );
 }
-
+ContactList.propTypes = {
+  filter: PropTypes.string.isRequired,
+  contacts: PropTypes.array.isRequired,
+  onDeleteContact: PropTypes.func.isRequired,
+};
 export default ContactList;

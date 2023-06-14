@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import { useState } from 'react';
 import { nanoid } from 'nanoid';
 import css from './ContactForm.module.css';
@@ -87,3 +88,7 @@ export default function ContactForm({ contacts, handleValueChange }) {
     </div>
   );
 }
+ContactForm.propTypes = {
+  contacts: PropTypes.array.isRequired,
+  handleValueChange: PropTypes.func.isRequired,
+};

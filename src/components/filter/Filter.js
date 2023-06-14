@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types';
+
 function Filter({ filter, filterChange }) {
   const handleFilterChange = event => {
     filterChange(event.target.value);
@@ -17,5 +19,8 @@ function Filter({ filter, filterChange }) {
     </div>
   );
 }
-
+Filter.propTypes = {
+  filter: PropTypes.string.isRequired,
+  filterChange: PropTypes.func.isRequired,
+};
 export default Filter;
